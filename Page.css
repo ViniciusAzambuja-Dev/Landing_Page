@@ -79,23 +79,24 @@ li:hover, a:hover{
 }
 .titulo1{
     font-family: Montserrat;
-    font-size: 50px;
+    font-size: max(15px, 4vw); /*4% da largura da pag*/
 }
 .titulo2{
     color: #C7BAB3;
     font-family: Inter;
-    font-size: 18px;
+    font-size: max(5px, 1.4vw);
     font-style: normal;
     width: 80%;
 }
 .Imagem{
     display: flex;
     flex-wrap: wrap;
-    max-width: 38%;
+    width: 100%;
+   
 }
 .Imagem img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 
     0 6px 20px 0 rgba(0,0,0,0.19);
