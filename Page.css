@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -61,7 +62,7 @@ li:hover, a:hover{
 .background{
     background-color: rgb(85, 51, 51);
 }
-.container_inicial{
+.container_anuncio{
     max-width: 1150px;
     display: flex;
     justify-content: space-between;
@@ -69,12 +70,12 @@ li:hover, a:hover{
     margin: auto auto;
     padding: 45px;
 }
-.conteudo_container{
+.conteudo_anuncio{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.conteudo_container hr{
+.conteudo_anuncio hr{
     width: 45%;
 }
 .titulo1{
@@ -87,22 +88,37 @@ li:hover, a:hover{
     font-size: max(5px, 1.4vw);
     font-style: normal;
     width: 80%;
+    
 }
-.Imagem{
+.Imagem_anuncio{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-   
 }
-.Imagem img{
+.Imagem_anuncio img{
     max-width: 100%;
     height: auto;
-    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 
     0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.Imagem img:hover{
+.Imagem_anuncio img:hover{
     transform: scale(1.1);
     transition: .5s;
     cursor: pointer;
+}
+.container_imagens{
+    column-count: 3;
+    padding: 3% 5% 0 5%;
+    gap: 10px;
+}
+.container_imagens img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px ;
+}
+.titulo_produtos{
+    padding: 5% 0 0 5%;
+}
+.titulo_produtos h2{
+    font-family: Oswald;
+    font-weight: 300;  
 }
