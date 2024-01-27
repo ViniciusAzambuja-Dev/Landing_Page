@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
 *{
@@ -115,6 +115,10 @@ li:hover, a:hover{
     height: auto;
     margin-bottom: 3px ;
 }
+.container_imagens img:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
 .titulo_produtos{
     padding: 5% 0 0 5%;
 }
@@ -122,3 +126,64 @@ li:hover, a:hover{
     font-family: Oswald;
     font-weight: 300;  
 }
+.section_Apresentacao{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+}
+.Paragrafos{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.titulo1_apresentação{
+    text-align: center;
+    font-family: Teko;
+    font-size: max(4vw, 15px);
+    font-weight: 500;
+    margin: 10px;
+}
+.titulo2_apresentação{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: max(6px, 1.2vw) ;
+    margin-bottom: 10px;
+    
+}
+.nome_empresa{
+    color: rgb(0, 0, 0);
+}
+/*
+.Contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.titulo_contato{
+    font-family: Teko;
+    font-weight: 400;
+    font-size: max(4vw, 15px);
+    margin: 8px 0px 8px 0px;
+}
+
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.input_group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{
+    display:flex;
+    flex-direction: column;
+}
+/*
+/*Deixar responsivo o titulo dos produtos e menu*/
