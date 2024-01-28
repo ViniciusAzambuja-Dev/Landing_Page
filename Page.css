@@ -21,7 +21,10 @@ a{
 .cabecalho-menu{
     background-color: rgb(83, 41, 41);
     padding: 20px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+   
 }   
 nav{
     max-width: 1150px; /*Importante definir sempre um max-width*/
@@ -54,7 +57,7 @@ nav{
     padding: 5px 25px;
 }
 
-li:hover, a:hover{
+.Linha_menu:hover, .links_menu:hover, .Login_link:hover{
     transform: scale(1.1);
     transition: .5s;
 }
@@ -110,6 +113,7 @@ li:hover, a:hover{
     padding: 3% 5% 0 5%;
     gap: 10px;
 }
+
 .container_imagens img{
     width: 100%;
     height: auto;
@@ -153,38 +157,50 @@ li:hover, a:hover{
 .nome_empresa{
     color: rgb(0, 0, 0);
 }
-/*
-.Contato{
-    width: 100%;
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer_links a{
+    font-family: Montserrat;
+    font-weight: 400;
+    color: white;
+}
+.footer_links ul{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-}
-.titulo_contato{
-    font-family: Teko;
-    font-weight: 400;
-    font-size: max(4vw, 15px);
-    margin: 8px 0px 8px 0px;
-}
-
-
-.container{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-}
-.input_group{
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 10px;
 }
-.input{
-    display:flex;
+.span_footer1{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.span_footer1 span{
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.span_footer{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;  
+}
+footer{
+    display: flex;
     flex-direction: column;
+    background-color: black;
 }
-Ver os videos
-/*
+.Creditos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Credito_imagens{
+    margin: 10px;
+    font-family: Montserrat;
+    font-weight: 400;  
+}
 /*Deixar responsivo o titulo dos produtos e menu*/
