@@ -34,9 +34,10 @@ nav{
     justify-content: space-between;/*colocou espaço entre os elementos*/
     align-items: center;
 }
+
 .titulo{
     font-family: Teko;
-    font-size: 35px;
+    font-size: max(20px, 3.0vw);
     font-weight: 600;
     text-transform: uppercase;
     color: white;
@@ -45,16 +46,22 @@ nav{
 .lista_menu{
     display: flex;
     flex-wrap: wrap;
+    font-family: Montserrat;
+    font-weight: 500;
 }
 .links_menu{
     padding: 10px 25px;
     color: white;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: max(9px, 1.1vw);
 }
 .Login_link{
     color: white;
-    padding: 5px 25px;
+    padding: 10px 25px;
+    font-size: max(10px, 1.2vw);
+    font-family: Montserrat;
+    font-weight: 500;
+   
 }
 
 .Linha_menu:hover, .links_menu:hover, .Login_link:hover{
@@ -83,7 +90,7 @@ nav{
 }
 .titulo1{
     font-family: Montserrat;
-    font-size: max(15px, 4vw); /*4% da largura da pag*/
+    font-size: max(10px, 4vw); /*4% da largura da pag*/
 }
 .titulo2{
     color: #C7BAB3;
@@ -129,6 +136,7 @@ nav{
 .titulo_produtos h2{
     font-family: Oswald;
     font-weight: 300;  
+    font-size: max(12px, 1.8vw);
 }
 .section_Apresentacao{
     background-color: rgb(255, 255, 255);
@@ -162,11 +170,13 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 25px;
+   
 }
 .footer_links a{
     font-family: Montserrat;
     font-weight: 400;
     color: white;
+    
 }
 .footer_links ul{
     display: flex;
@@ -178,15 +188,18 @@ nav{
 .span_footer1{
     text-align: center;
     margin: 10px 0 10px 0;
+    font-size: max(10px, 1.2vw) ;
 }
 .span_footer1 span{
     font-family: Montserrat;
     font-weight: 500;
+    
 }
 .span_footer{
     text-align: center;
     font-family: Montserrat;
     font-weight: 400;  
+    font-size: max(8px, 1.2vw) ;
 }
 footer{
     display: flex;
@@ -197,10 +210,77 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 .Credito_imagens{
     margin: 10px;
     font-family: Montserrat;
     font-weight: 400;  
+    font-size: max(6px, 1.2vw) ;
 }
+.link_footer{
+    font-size: max(8px, 1.2vw) ;
+}
+@media only screen and (max-width: 620px){
+    nav{
+        margin: 0;
+    }
+    .links_menu{
+        padding: 5px 12px;
+    }
+    .Login_link{
+        padding: 5px 12px;
+    }
+}
+@media only screen and (max-width: 369px){
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .links_menu{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .Login_link{
+       display: none;
+    }
+    
+    
+}
+/*@media only screen and (max-width: 625px) and (min-width: 510px)
+{
+nav{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+.links_menu{
+    padding: 5px 10px;
+}
+.Login_link{
+    padding: 5px 15px;
+}
+}
+@media only screen and (max-width: 509px)
+{
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0; 
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .links_menu{
+        padding: 5px 5px;
+    }
+    .Login_link{
+       padding: 5px 5px;
+    }
+    
+}/*
 /*Deixar responsivo o titulo dos produtos e menu*/
