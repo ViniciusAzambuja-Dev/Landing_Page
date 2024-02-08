@@ -113,7 +113,7 @@ nav{
 .Imagem_anuncio img:hover{
     transform: scale(1.1);
     transition: .5s;
-    cursor: pointer;
+    cursor:pointer;
 }
 .container_imagens{
     column-count: 3;
@@ -127,9 +127,10 @@ nav{
     margin-bottom: 3px ;
 }
 .container_imagens img:hover{
-    transform: scale(1.05);
-    transition: .2s;
+    cursor: pointer;
+    
 }
+
 .titulo_produtos{
     padding: 5% 0 0 5%;
 }
@@ -231,6 +232,7 @@ footer{
     .Login_link{
         padding: 5px 12px;
     }
+
 }
 @media only screen and (max-width: 369px){
     nav{
@@ -251,36 +253,75 @@ footer{
     
     
 }
-/*@media only screen and (max-width: 625px) and (min-width: 510px)
-{
-nav{
+
+.Imagem_produto{
+    position: relative;
+}
+
+.botao_Filho{
+    display: none;
+    text-align: center;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.link_botao{
+    font-family: Montserrat;
+    font-weight: 500;  
+    font-size: max(8px, 1.2vw);
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    background-color: rgb(0, 0, 0);
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.icon2{
+    background-color: rgb(0, 0, 0);
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.icon:hover{
+    background-color: rgb(43, 43, 43);
+}
+.icons{
+    display: none;
+}
+.Imagem_produto:hover .icons{
     display: flex;
-    justify-content: flex-start;
-    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    gap: 5px;
 }
-.links_menu{
-    padding: 5px 10px;
+.botao_Filho:hover{
+    background-color: rgb(43, 43, 43);
 }
-.Login_link{
-    padding: 5px 15px;
+.Imagem_produto:hover .botao_Filho{
+    display: flex;
+    align-items: center;
 }
-}
-@media only screen and (max-width: 509px)
-{
-    nav{
-        display: flex;
-        justify-content: flex-start;
-        margin: 0; 
-    }
-    .titulo{
-        font-size: 30px;
-    }
-    .links_menu{
-        padding: 5px 5px;
-    }
-    .Login_link{
-       padding: 5px 5px;
-    }
+.imagem_icon{
+    display: flex;
+    align-items: center;
     
-}/*
-/*Deixar responsivo o titulo dos produtos e menu*/
+}
+.imagem_icon2{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 620px){
+    .botao_Filho{
+        padding: 2px 10px;
+    }
+
+    .Imagem_produto:hover .icons{
+        display: none;
+    }
+}
