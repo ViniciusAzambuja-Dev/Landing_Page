@@ -30,11 +30,11 @@ a{
    
 }   
 nav{
-    max-width: 1150px; /*Importante definir sempre um max-width*/
-    margin: auto;/*definiu um margin e centralizou os itens*/
-    display: flex; /*Alinhou o titulo e os links, porém os links continuaram embaixo do outro*/
-    flex-wrap: wrap;/*O elemento era saiu da caixa dele, dai usamos wrap*/
-    justify-content: space-between;/*colocou espaço entre os elementos*/
+    max-width: 1150px; 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -90,7 +90,7 @@ nav{
 }
 .titulo1{
     font-family: Montserrat;
-    font-size: max(10px, 4vw); /*4% da largura da pag*/
+    font-size: max(10px, 4vw); 
 }
 .titulo2{
     color: #C7BAB3;
