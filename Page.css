@@ -186,21 +186,12 @@ nav{
     gap: 25px;
     margin-bottom: 10px;
 }
-.span_footer1{
-    text-align: center;
-    margin: 10px 0 10px 0;
-    font-size: max(10px, 1.2vw) ;
-}
-.span_footer1 span{
-    font-family: Montserrat;
-    font-weight: 500;
-    
-}
 .span_footer{
     text-align: center;
     font-family: Montserrat;
     font-weight: 400;  
     font-size: max(8px, 1.2vw) ;
+    margin-top: 10px;
 }
 footer{
     display: flex;
