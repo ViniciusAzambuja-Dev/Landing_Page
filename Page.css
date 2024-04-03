@@ -30,9 +30,15 @@ a{
    
 }   
 nav{
+<<<<<<< HEAD
     max-width: 1150px; 
     margin: auto;
     display: flex;
+=======
+    max-width: 1150px;
+    margin: auto;
+    display: flex; 
+>>>>>>> 3b2f07c1f11a9bf51d2ee7a023c293678cea8b0b
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +96,11 @@ nav{
 }
 .titulo1{
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: max(10px, 4vw); 
+=======
+    font-size: max(10px, 4vw);
+>>>>>>> 3b2f07c1f11a9bf51d2ee7a023c293678cea8b0b
 }
 .titulo2{
     color: #C7BAB3;
