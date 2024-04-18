@@ -1,6 +1,6 @@
 # Projeto Simples de uma Landing Page
 
-Este é um projeto simples desenvolvido em Janeiro de 2024. Consiste em uma Landing Page de Imagens!
+Este é um projeto simples desenvolvido em 2024. Consiste em uma Landing Page de Imagens!
 
 ## Tecnologias Utilizadas
 
